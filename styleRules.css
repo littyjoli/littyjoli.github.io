@@ -1,0 +1,135 @@
+   body {
+      background-color: white
+   }
+
+p {font-family: arial;
+   font-size: 15pt;
+   margin-left: 100px;
+   margin-right: 100px;
+   }
+
+h1  {font-family: arial;
+   font-size: 20pt;
+   margin-left: 100px;
+   }
+   
+           
+td {border: 2pt solid green;
+    font-family: courier;
+    font-size: 20pt}
+    
+th {border: 2pt solid red;
+    font-family: impact;
+    background-color: gray;
+    font-size: 25pt}
+    
+.horiz_ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0;
+}
+
+.horiz_li {
+    float: left;
+}
+
+.horiz_li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: top 0.3s;
+}
+
+.center {
+  padding: 15% 0;
+  text-align: center;
+  font-size: 46pt;
+  font-family: fantasy,"blippo";
+}
+
+.horiz_li a:hover {
+    background-color: #111;
+}
+
+
+.vert_ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    overflow: hidden;
+}
+
+.vert_li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    text-align:center;  
+}
+
+.vert_li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+#move{
+    position:relative;
+    -webkit-animation: diagonal 2s infinite;
+}
+
+@-webkit-keyframes diagonal {
+    0%       { transform: translatex(-130px) translatey(-400px) }
+    25%      { transform: translatex(35%) translatey(-100px); }
+    50%      { transform: translatex(1100px) translatey(-400px); }   
+    75%      { transform: translatex(35%) translatey(-700px); }
+    100%      { transform: translatex(-130px) translatey(-400px); }
+
+}
+body, html {
+  height: 100%;
+     font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+.bg-image {
+  /* Full height */
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Images used */
+.img1 { background-image: url("vincent2.jpg"); }
+.img2 { background-image: url("vincent3.jpg"); }
+.img3 { background-image: url("vincent4.jpg"); }
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  font-size: 80px;
+  border: 10px solid #f1f1f1;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+}
